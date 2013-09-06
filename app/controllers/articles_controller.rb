@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = Article.search(params[:search],:match_mode => :fullscan)
+    @articles = Article.all
   end
 
   def show
@@ -44,6 +44,9 @@ class ArticlesController < ApplicationController
     redirect_to articles_url
   end
 
+  def search_results
+    @articles = Article.search(params[:search],:match_mode => :fullscan)
+  end
   private
   def articles_params
     params.require(:article).permit(:name,:content,:author_id)

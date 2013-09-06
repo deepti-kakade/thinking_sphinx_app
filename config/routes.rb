@@ -1,5 +1,9 @@
 ThinkingSphinxApp::Application.routes.draw do
-    resources :articles
+    resources :articles do
+      collection do
+        post :search_results
+      end
+    end
     resources :comments
     root :to => 'articles#index'
 

@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
   end
   
   def create
-    @comment = Comment.new(params[:comment])
+    @comment = Comment.new(comments_params)
     if @comment.save
       flash[:notice] = "Successfully created comment."
       redirect_to article_url(@comment.article_id)
@@ -32,5 +32,10 @@ class CommentsController < ApplicationController
     @comment.destroy
     flash[:notice] = "Successfully destroyed comment."
     redirect_to article_url(@comment.article_id)
+  end
+
+  private
+  def comments_params
+    params.require(:comment).permit(:article_id,:author_name,:content,:site_url)
   end
 end

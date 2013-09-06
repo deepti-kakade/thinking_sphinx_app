@@ -9,7 +9,7 @@
   </p>
     <p>
       <%= f.label :author_id %><br />
-      <%= f.text_area :author_id %>
+      <%= collection_select(:article, :author_id, Author.all, :id, :first_name) %>
     </p>
   <p><%= f.submit "Submit" %></p>
 <% end %>

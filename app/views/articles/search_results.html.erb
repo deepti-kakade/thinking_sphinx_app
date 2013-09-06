@@ -1,0 +1,15 @@
+<div id="articles">
+  <h1>Search Results</h1>
+  <ul class="latest_entries dir_icons">
+    <% @articles.each do |o| %>
+        <% if o %>
+            <li class="<%= ActiveSupport::Inflector::underscore(o.class.to_s) %> <%= cycle('even','odd') %> clearfix">
+              <%= link_to(o.name, send("#{ActiveSupport::Inflector::underscore(o.class.to_s)}_path", o.id.to_s)) %>
+            </li>
+        <% end %>
+    <% end %>
+  </ul>
+  <% if @articles.empty? %>
+      <b>Sorry, but we found no matches for your search</b>
+  <% end %>
+</div>
