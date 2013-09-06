@@ -1,0 +1,7 @@
+development:
+  morphology: stem_en
+  enable_star: true
+  bin_path: '/usr/bin/'
+  min_prefix_len: 3
+  min_word_len: 3
+  expand_keywords: 1
