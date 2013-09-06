@@ -10,7 +10,7 @@
     <file path="/_form.html.erb" changelist="25a4d9cc-996a-4e66-828d-1f8fcf83d709" time="1378459700098" ignored="false" />
     <file path="/new.html.erb" changelist="25a4d9cc-996a-4e66-828d-1f8fcf83d709" time="1378206658459" ignored="false" />
     <file path="/articles_controller.rb" changelist="25a4d9cc-996a-4e66-828d-1f8fcf83d709" time="1378461868148" ignored="false" />
-    <file path="/index.html.erb" changelist="25a4d9cc-996a-4e66-828d-1f8fcf83d709" time="1378460985227" ignored="false" />
+    <file path="/index.html.erb" changelist="25a4d9cc-996a-4e66-828d-1f8fcf83d709" time="1378465304702" ignored="false" />
     <file path="/comments_controller.rb" changelist="25a4d9cc-996a-4e66-828d-1f8fcf83d709" time="1378457907471" ignored="false" />
     <file path="/show.html.erb" changelist="25a4d9cc-996a-4e66-828d-1f8fcf83d709" time="1378459354047" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,7 +32,7 @@
       <file leaf-file-name="articles_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="70" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
+            <state line="47" column="71" selection-start="1000" selection-end="1024" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -41,25 +41,16 @@
       <file leaf-file-name="article_index.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/indices/article_index.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="39" selection-start="248" selection-end="248" vertical-scroll-proportion="0.15228426">
+            <state line="6" column="19" selection-start="251" selection-end="251" vertical-scroll-proportion="0.15228426">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/articles/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="45" selection-start="466" selection-end="466" vertical-scroll-proportion="-8.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_results.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/articles/search_results.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="43" selection-start="536" selection-end="536" vertical-scroll-proportion="-8.75">
+            <state line="19" column="3" selection-start="709" selection-end="709" vertical-scroll-proportion="-11.875">
               <folding />
             </state>
           </provider>
@@ -76,7 +67,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/app/models/article.rb" />
         <option value="$PROJECT_DIR$/config/sphinx.yml" />
         <option value="$PROJECT_DIR$/app/views/articles/new.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -84,12 +74,13 @@
         <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/articles/_form.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/articles/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/search_results.html.erb" />
-        <option value="$PROJECT_DIR$/app/indices/article_index.rb" />
         <option value="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/articles/show.html.erb" />
         <option value="$PROJECT_DIR$/config/development.sphinx.conf" />
+        <option value="$PROJECT_DIR$/app/views/articles/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/article.rb" />
+        <option value="$PROJECT_DIR$/app/indices/article_index.rb" />
       </list>
     </option>
   </component>
@@ -153,7 +144,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thinking_sphinx_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="thinking_sphinx_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="indices" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -510,25 +519,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/sphinx.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="26" selection-start="137" selection-end="137" vertical-scroll-proportion="0.15228426" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="40" selection-start="150" selection-end="150" vertical-scroll-proportion="0.21164021">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/comments/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="45" selection-start="62" selection-end="62" vertical-scroll-proportion="0.105820104">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/articles/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -564,20 +554,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="2" selection-start="209" selection-end="228" vertical-scroll-proportion="0.2166065">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/search_results.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="43" selection-start="536" selection-end="536" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/comments/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="27" selection-start="61" selection-end="61" vertical-scroll-proportion="0.105820104">
@@ -592,20 +568,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="45" selection-start="466" selection-end="466" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="70" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/development.sphinx.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="64" selection-start="1700" selection-end="1700" vertical-scroll-proportion="0.7866185">
@@ -613,9 +575,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/search_results.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="43" selection-start="536" selection-end="536" vertical-scroll-proportion="0.37037036">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="45" selection-start="466" selection-end="466" vertical-scroll-proportion="0.37037036">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="71" selection-start="141" selection-end="141" vertical-scroll-proportion="0.12690355">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="71" selection-start="1000" selection-end="1024" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="31" selection-start="108" selection-end="108" vertical-scroll-proportion="0.10152284">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/article.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="69" selection-start="105" selection-end="105" vertical-scroll-proportion="0.10152284">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/articles/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="3" selection-start="709" selection-end="709" vertical-scroll-proportion="-11.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/indices/article_index.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="39" selection-start="248" selection-end="248" vertical-scroll-proportion="0.15228426">
+        <state line="6" column="19" selection-start="251" selection-end="251" vertical-scroll-proportion="0.15228426">
           <folding />
         </state>
       </provider>
